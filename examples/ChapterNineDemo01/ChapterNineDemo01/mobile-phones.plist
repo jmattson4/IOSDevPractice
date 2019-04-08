@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Android Phones</key>
+	<array>
+		<string>Samsung Galaxy 10</string>
+		<string>Samsung Galaxy 10 plus</string>
+		<string>Samsung Galaxy 8</string>
+	</array>
+	<key>Google Phones</key>
+	<array>
+		<string>Google Pixel 2</string>
+		<string>Google Pixel 3</string>
+		<string>Google Pixel 3 XL</string>
+	</array>
+	<key>Apple Phones</key>
+	<array>
+		<string>Iphone 8+</string>
+		<string>IPhone XS Max</string>
+		<string>IPhone XR</string>
+		<string>IPhone X</string>
+	</array>
+</dict>
+</plist>
