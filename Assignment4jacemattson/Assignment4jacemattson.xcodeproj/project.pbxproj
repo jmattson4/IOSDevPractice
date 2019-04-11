@@ -11,6 +11,8 @@
 		E179AEA72239BF52007D372C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E179AEA52239BF52007D372C /* Main.storyboard */; };
 		E179AEA92239BF53007D372C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E179AEA82239BF53007D372C /* Assets.xcassets */; };
 		E179AEAC2239BF53007D372C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E179AEAA2239BF53007D372C /* LaunchScreen.storyboard */; };
+		E1A45E90225EA762006498DF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A45E8F225EA762006498DF /* SettingsViewController.swift */; };
+		E1A45E92225EA7E4006498DF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1A45E91225EA7E4006498DF /* Default-568h@2x.png */; };
 		E1C6FCD122406789009E46F2 /* WinsLossesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C6FCD022406789009E46F2 /* WinsLossesTableViewController.swift */; };
 		E1C6FCD522406855009E46F2 /* WinsLossesDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C6FCD422406855009E46F2 /* WinsLossesDataManager.swift */; };
 		E1D5866C223C682C000CEF2A /* GamblingSpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D5866B223C682C000CEF2A /* GamblingSpinnerViewController.swift */; };
@@ -25,6 +27,8 @@
 		E179AEA82239BF53007D372C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E179AEAB2239BF53007D372C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E179AEAD2239BF53007D372C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1A45E8F225EA762006498DF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		E1A45E91225EA7E4006498DF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E1C6FCD022406789009E46F2 /* WinsLossesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinsLossesTableViewController.swift; sourceTree = "<group>"; };
 		E1C6FCD422406855009E46F2 /* WinsLossesDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinsLossesDataManager.swift; sourceTree = "<group>"; };
 		E1D5866B223C682C000CEF2A /* GamblingSpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamblingSpinnerViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +50,7 @@
 		E179AE952239BF52007D372C = {
 			isa = PBXGroup;
 			children = (
+				E1A45E91225EA7E4006498DF /* Default-568h@2x.png */,
 				E179AEA02239BF52007D372C /* Assignment3jacemattson */,
 				E179AE9F2239BF52007D372C /* Products */,
 			);
@@ -72,6 +77,7 @@
 				E1C6FCD022406789009E46F2 /* WinsLossesTableViewController.swift */,
 				E1C6FCD422406855009E46F2 /* WinsLossesDataManager.swift */,
 				E1F505FF225C2563003ECBD3 /* Settings.bundle */,
+				E1A45E8F225EA762006498DF /* SettingsViewController.swift */,
 			);
 			path = Assignment3jacemattson;
 			sourceTree = "<group>";
@@ -111,7 +117,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E179AE992239BF52007D372C /* Build configuration list for PBXProject "Assignment3jacemattson" */;
+			buildConfigurationList = E179AE992239BF52007D372C /* Build configuration list for PBXProject "Assignment4jacemattson" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -139,6 +145,7 @@
 				E1F50600225C2563003ECBD3 /* Settings.bundle in Resources */,
 				E179AEA92239BF53007D372C /* Assets.xcassets in Resources */,
 				E179AEA72239BF52007D372C /* Main.storyboard in Resources */,
+				E1A45E92225EA7E4006498DF /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +159,7 @@
 				E1C6FCD122406789009E46F2 /* WinsLossesTableViewController.swift in Sources */,
 				E1C6FCD522406855009E46F2 /* WinsLossesDataManager.swift in Sources */,
 				E179AEA22239BF52007D372C /* AppDelegate.swift in Sources */,
+				E1A45E90225EA762006498DF /* SettingsViewController.swift in Sources */,
 				E1D5866C223C682C000CEF2A /* GamblingSpinnerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,7 +337,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E179AE992239BF52007D372C /* Build configuration list for PBXProject "Assignment3jacemattson" */ = {
+		E179AE992239BF52007D372C /* Build configuration list for PBXProject "Assignment4jacemattson" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E179AEAE2239BF53007D372C /* Debug */,
