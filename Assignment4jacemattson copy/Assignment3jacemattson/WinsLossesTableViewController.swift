@@ -10,9 +10,10 @@ import UIKit
 
 class WinsLossesTableViewController: UITableViewController {
     let dataManager = WinsLossesDataManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        dataManager.retrieveWinsLosses()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -29,13 +30,13 @@ class WinsLossesTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return dataManager.winsLosses.count
+        return dataManager.winsLossesAverages.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        let wins = dataManager.winsLosses[section]
-        return dataManager.wins(wins: wins).count
+        
+        return dataManager.winsLossesAverages.count
     }
 
     
@@ -43,16 +44,13 @@ class WinsLossesTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "winsCell", for: indexPath)
 
         // Configure the cell...
-        let wins = dataManager.winsLosses[indexPath.section]
-        let winsLosses = dataManager.winsLossesDict[wins]
-        let winName = winsLosses![indexPath.row]
-        cell.textLabel?.text = winName
+        let winsLossesAverage = dataManager.winsLossesAverages[indexPath.row]
+        cell.textLabel?.text = String(winsLossesAverage.win)
         return cell
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let winsLosses = dataManager.winsLosses[section]
-        return winsLosses
+        return "Wins Losses And Average"
 }
     /*
     // Override to support conditional editing of the table view.

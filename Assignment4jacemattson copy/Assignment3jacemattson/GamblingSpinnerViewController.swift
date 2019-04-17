@@ -10,6 +10,8 @@ import UIKit
 
 class GamblingSpinnerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    var winsLosses = WinLossAverage()
+    var dataManager = WinsLossesDataManager()
     var userName: String? = " "
     var slotLevel = 3.00
     var intSlotLevel = 0
@@ -78,16 +80,20 @@ class GamblingSpinnerViewController: UIViewController, UIPickerViewDelegate, UIP
             }
             if win == true {
                 self.self.winLabel.text = " You WIN \(self.self.userName!)"
+                self.winsLosses.win = self.winsLosses.win + 1
+                
             }
             else {
                 self.winLabel.text = " "
+                self.winsLosses.loss = self.winsLosses.loss + 1
             }
         })    
         let closeAction = UIAlertAction(title: "Cancel", style: .default, handler: nil)
         controller.addAction(action)
         controller.addAction(closeAction)
         present(controller, animated: true, completion: nil)
-
+        dataManager.winsLossesAverages.append(winsLosses)
+        self.dataManager.writeToFile()
     }
     func loadImagesArray(){
         if intSlotLevel == 2{

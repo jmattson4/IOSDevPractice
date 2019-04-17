@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>Wins</key>
-	<array>
-		<string>You Won</string>
-	</array>
-	<key>Losses</key>
-	<array>
-		<string>You lost</string>
-	</array>
-	<key>Average</key>
-	<array/>
-</dict>
+<array>
+	<dict>
+		<key>Wins</key>
+		<integer>0</integer>
+		<key>Losses</key>
+		<integer>0</integer>
+		<key>Average</key>
+		<integer>0</integer>
+	</dict>
+</array>
 </plist>
