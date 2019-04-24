@@ -9,7 +9,7 @@
 import Foundation
 
 class WinLossAverage{
-    var win = 1
-    var loss = 1
+    var win = 0
+    var loss = 0
     var average = 0.00
 }

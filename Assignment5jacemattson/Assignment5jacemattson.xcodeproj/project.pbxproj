@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E14BA780227112BA00C24699 /* WinsLossesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14BA77F227112BA00C24699 /* WinsLossesTableViewCell.swift */; };
 		E179AEA22239BF52007D372C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E179AEA12239BF52007D372C /* AppDelegate.swift */; };
 		E179AEA72239BF52007D372C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E179AEA52239BF52007D372C /* Main.storyboard */; };
 		E179AEA92239BF53007D372C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E179AEA82239BF53007D372C /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E14BA77F227112BA00C24699 /* WinsLossesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinsLossesTableViewCell.swift; sourceTree = "<group>"; };
 		E179AE9E2239BF52007D372C /* Assignment3jacemattson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment3jacemattson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E179AEA12239BF52007D372C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E179AEA62239BF52007D372C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				E1F505FF225C2563003ECBD3 /* Settings.bundle */,
 				E1A45E8F225EA762006498DF /* SettingsViewController.swift */,
 				E1B7D9CD2267D06000009F1E /* WinLossAverage.swift */,
+				E14BA77F227112BA00C24699 /* WinsLossesTableViewCell.swift */,
 			);
 			path = Assignment3jacemattson;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				E1C6FCD122406789009E46F2 /* WinsLossesTableViewController.swift in Sources */,
 				E1B7D9CE2267D06000009F1E /* WinLossAverage.swift in Sources */,
 				E1C6FCD522406855009E46F2 /* WinsLossesDataManager.swift in Sources */,
+				E14BA780227112BA00C24699 /* WinsLossesTableViewCell.swift in Sources */,
 				E179AEA22239BF52007D372C /* AppDelegate.swift in Sources */,
 				E1A45E90225EA762006498DF /* SettingsViewController.swift in Sources */,
 				E1D5866C223C682C000CEF2A /* GamblingSpinnerViewController.swift in Sources */,

@@ -35,7 +35,7 @@ class WinsLossesDataManager {
             var singleWinsLossesDict = [String: AnyObject]()
             singleWinsLossesDict["Wins"] = singleWinsLossesAverage.win as AnyObject
             singleWinsLossesDict["Losses"] = singleWinsLossesAverage.loss as AnyObject
-            singleWinsLossesDict["Average"] = singleWinsLossesAverage.win / singleWinsLossesAverage.loss as AnyObject
+            singleWinsLossesDict["Average"] = singleWinsLossesAverage.average as AnyObject
             plistArray.append(singleWinsLossesDict)
         }
         let array = plistArray as NSArray

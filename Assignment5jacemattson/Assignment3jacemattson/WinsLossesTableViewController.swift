@@ -13,14 +13,23 @@ class WinsLossesTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.rowHeight = 100
         dataManager.retrieveWinsLosses()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+        self.loadData()
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    func loadData(){
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.reloadData()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        dataManager.retrieveWinsLosses()
+        loadData()
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -30,22 +39,26 @@ class WinsLossesTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return dataManager.winsLossesAverages.count
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         
-        return dataManager.winsLossesAverages.count
+        return 1
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "winsCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "winsCell", for: indexPath) as! WinsLossesTableViewCell
 
         // Configure the cell...
-        let winsLossesAverage = dataManager.winsLossesAverages[indexPath.row]
-        cell.textLabel?.text = String(winsLossesAverage.win)
+        let winsLossesAverage = dataManager.winsLossesAverages[indexPath.section]
+        if indexPath.row == 0 {
+            cell.wins.text = String(winsLossesAverage.win)
+            cell.losses.text = String(winsLossesAverage.loss)
+            cell.average.text = String(winsLossesAverage.average)
+        }
         return cell
     }
     

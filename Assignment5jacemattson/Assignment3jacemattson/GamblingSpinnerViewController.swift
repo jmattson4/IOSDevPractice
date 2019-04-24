@@ -92,6 +92,8 @@ class GamblingSpinnerViewController: UIViewController, UIPickerViewDelegate, UIP
         controller.addAction(action)
         controller.addAction(closeAction)
         present(controller, animated: true, completion: nil)
+        //takes the win loss average then adds that to the plist file
+        winsLosses.average = Double(winsLosses.win) / Double(winsLosses.loss)
         dataManager.winsLossesAverages.append(winsLosses)
         self.dataManager.writeToFile()
     }
